@@ -13,7 +13,7 @@ class AuthController extends Controller
 
     protected $loginPath = '/acceso';
 
-    protected $redirectPath = '/administrador/escritorio';
+    protected $redirectTo = '/administrador/escritorio';
 
     protected $redirectAfterLogout = '/acceso';
 
