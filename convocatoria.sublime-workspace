@@ -417,10 +417,13 @@
 	},
 	"expanded_folders":
 	[
+		"/F/xampp/htdocs/projects/convocatoria/app/Http/Controllers"
 	],
 	"file_history":
 	[
 		"/F/xampp/htdocs/projects/convocatoria/app/Http/Controllers/Auth/AuthController.php",
+		"/C/Users/Roger/AppData/Local/Temp/fz3temp-1/proceso.php",
+		"/C/Users/Roger/AppData/Local/Temp/fz3temp-1/.env",
 		"/F/xampp/htdocs/projects/convocatoria/resources/views/template/header.blade.php",
 		"/F/xampp/htdocs/projects/convocatoria/resources/views/movies/index.blade.php",
 		"/F/xampp/htdocs/projects/convocatoria/resources/views/template/layout.blade.php",
@@ -445,7 +448,6 @@
 		"/C/wamp/www/proyectos/palcokia/app/Http/Controllers/UserController.php",
 		"/C/wamp/www/proyectos/mundotuerca/public_html/resources/views/video/index.blade.php",
 		"/F/xampp/htdocs/projects/convocatoria/app/Models/Movie.php",
-		"/C/Users/Roger/AppData/Local/Temp/fz3temp-1/proceso.php",
 		"/F/xampp/htdocs/projects/convocatoria/resources/views/template/footer.blade.php",
 		"/F/xampp/htdocs/projects/convocatoria/composer.json",
 		"/C/wamp/www/proyectos/mundotuerca/public_html/app/Providers/AppServiceProvider.php",
@@ -546,8 +548,7 @@
 		"/C/wamp/www/pruebas/api/composer.json",
 		"/C/wamp/www/pruebas/api/app/Http/Kernel.php",
 		"/C/wamp/www/pruebas/api/config/cors.php",
-		"/C/wamp/www/pruebas/api/app/Note.php",
-		"/C/wamp/www/pruebas/api/database/migrations/2016_01_22_200732_create_notes_table.php"
+		"/C/wamp/www/pruebas/api/app/Note.php"
 	],
 	"find":
 	{
