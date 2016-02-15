@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "F:\\xampp\\htdocs\\projects\\chatnodejs"
 		}
 	]
 }
