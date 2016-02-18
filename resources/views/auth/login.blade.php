@@ -7,7 +7,7 @@
     
     .img-logo {
         height: 91px;
-        margin-top: 50%;
+        margin-top: 25%;
         width: 367px;
     }
 
@@ -53,11 +53,11 @@
                         	</span>
                             <input class="form-control" placeholder="Contrase&ntilde;a" name="password" type="password" value="">
                         </div>
-                        <div class="checkbox">
+                        <!-- <div class="checkbox">
                             <label>
                                 <input name="remember" type="checkbox" value="Remember Me">Recu&eacute;rdame
                             </label>
-                        </div>
+                        </div> -->
                         <!-- Change this to a button or input when using this as a form -->
                         <button type="submit" class="btn btn-lg btn-success btn-block">
                         	Acceder <i class="fa fa-sign-in"></i>
