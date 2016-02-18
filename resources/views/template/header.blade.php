@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ route('escritorio') }}">Convocatoria Festival de Cine de Lima 2016</a>
+        <a class="navbar-brand" href="{{ route('escritorio') }}">Festival de Cine de Lima</a>
     </div>
     <!-- /.navbar-header -->
 

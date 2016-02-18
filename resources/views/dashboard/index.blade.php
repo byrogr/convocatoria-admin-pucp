@@ -127,23 +127,31 @@
 <script>
     jQuery(function($) {
 
-       var socket = io.connect('http://localhost:3700');
-       var $messageForm = $('#btn-chat');
-       var $message = $('#message');
-       var $chat = $('#chatcontent ul');
+        var socket = io.connect('http://localhost:3700');
+        var $messageForm = $('#btn-chat');
+        var $message = $('#message');
+        var $chat = $('#chatcontent ul');
 
-       $messageForm.click(function(e) {
+        $messageForm.click(function(e) {
            e.preventDefault();
-           if( $message.val() != "" ) {
-               socket.emit('sendMessage', $message.val());
-               $message.val('');
-           }
-       });
+           
+            if( $message.val() != "" ) {
+                var inicio = new Date();
+
+                var data = {
+                    mensaje: $message.val(),
+                    hora: inicio.getMinutes()
+                };
+                
+                socket.emit('sendMessage', data);
+                $message.val('');
+            }
+        });
        
-       socket.on('newMessage', function(data) {
-            var msj = '<li class="left clearfix"><div class="chat-body chat-body-custom"><div class="header"><strong class="primary-font">Roger Rojas</strong><small class="pull-right text-muted"><i class="fa fa-clock-o fa-fw"></i> hace 12 min.</small></div><p class="chat-message">'+ data.msg +'</p></div></li>';
+        socket.on('newMessage', function(data) {
+            var msj = '<li class="left clearfix"><div class="chat-body chat-body-custom"><div class="header"><strong class="primary-font">Roger Rojas</strong><small class="pull-right text-muted"><i class="fa fa-clock-o fa-fw"></i> hace '+ data.time +' min.</small></div><p class="chat-message">'+ data.msg +'</p></div></li>';
             $chat.append(msj); 
-       });
+        });
     });
 </script>
 @endsection
