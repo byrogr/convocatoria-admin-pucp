@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>@yield('title') | Convocatoria 2016 - Festival del Cine de Lima </title>
+    <title>@yield('title') :: Convocatoria 2016 :: Festival de Cine de Lima</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ asset('assets/bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
