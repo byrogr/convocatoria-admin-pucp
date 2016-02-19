@@ -105,7 +105,7 @@
 
                             setTimeout(function() {
                                 $('#btnEnviar').html('<i class="fa fa-paper-plane"></i> Enviar');
-                                $('#alert-enviado').show();
+                                $('#alert-enviado').slideDown();
                                 setTimeout(function() {
                                     $('#alert-enviado').slideUp('normal', function() {
                                         $('#txtAsunto').val('');
