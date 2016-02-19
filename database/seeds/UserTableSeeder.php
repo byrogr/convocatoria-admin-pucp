@@ -11,6 +11,7 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
+        //Vertice
         factory(App\User::class)->create([
 			'name'     => 'Roger Rojas',
 			'email'    => 'rrojas@vertice.pe',
@@ -21,6 +22,31 @@ class UserTableSeeder extends Seeder
 			'name'     => 'Esnider Contreras',
 			'email'    => 'esnider@vertice.pe',
 			'password' => bcrypt('esnider')
+        ]);
+
+        //Festival
+        factory(App\User::class)->create([
+            'name'     => 'Leslie Rojas',
+            'email'    => 'krojas@pucp.pe',
+            'password' => bcrypt('7%di5G/F/Bz1')
+        ]);
+
+        factory(App\User::class)->create([
+            'name'     => 'Alicia Morales',
+            'email'    => 'lmorale@pucp.pe',
+            'password' => bcrypt('+IX*xvb]yqQS')
+        ]);
+
+        factory(App\User::class)->create([
+            'name'     => 'Prensa CCPUCP',
+            'email'    => 'prensacc@pucp.pe',
+            'password' => bcrypt('C@x(72:OC}:a')
+        ]);
+
+        factory(App\User::class)->create([
+            'name'     => 'Gabriela Zenteno',
+            'email'    => 'gzenteno@pucp.pe',
+            'password' => bcrypt('8v2ORn0u"fys')
         ]);
     }
 }
