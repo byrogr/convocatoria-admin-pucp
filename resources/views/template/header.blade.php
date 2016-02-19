@@ -12,6 +12,9 @@
     <!-- /.navbar-header -->
 
     <ul class="nav navbar-top-links navbar-right">
+        <button type="button" class="btn btn-warning navbar-btn" data-toggle="modal" data-target="#mdlSoporte">
+            <i class="fa fa-wrench"></i> Soporte T&eacute;cnico
+        </button>
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>

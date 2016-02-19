@@ -50,7 +50,7 @@
 	</div><!-- end of .panel-body -->
 </div><!-- end of .panel -->
 
-
+@include('emails.form')
 @endsection
 
 @section('js_plugins')
@@ -68,6 +68,36 @@
 	            	url: "{{ asset('assets/bower_components/datatables/media/js/localisation/es_ES.json') }}"
 			    }
 	    });
+		var $form = $('#frmSoporte');
+		$('#alert-enviado').hide();
+		$form.submit(function(event) {
+			event.preventDefault();
+			var data = $(this).serialize();
+			$.ajax({
+				url: '{{ route('send')  }}',
+				data: data,
+				type: 'post',
+				dataType: 'json',
+				beforeSend: function() {
+					$('#btnEnviar').html('<i class="fa fa-circle-o-notch fa-spin"></i> Enviando...');
+				},
+				success: function(res) {
+					if ( res.status == 'success' ) {
+
+						setTimeout(function() {
+							$('#btnEnviar').html('<i class="fa fa-paper-plane"></i> Enviar');
+							$('#alert-enviado').show();
+							setTimeout(function() {
+								$('#alert-enviado').slideUp('normal', function() {
+									$('#txtAsunto').val('');
+									$('#txaMensaje').val('');
+								});
+							}, 2000);
+						}, 1000);
+					}
+				}
+			});
+		});
 	});
 </script>
 @endsection

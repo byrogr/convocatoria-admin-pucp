@@ -45,3 +45,9 @@ Route::group(['prefix' => 'administrador'], function() {
 		'as' => 'peliculas'
 	]);
 });
+
+// Rutas para envío de email
+Route::post('send', [
+	'as' => 'send',
+	'uses' => 'MailController@send'
+]);
